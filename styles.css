@@ -5,5 +5,28 @@
 }
 
 body {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  margin: 50px 0;
+}
+
+.container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+  justify-items: center;
+  margin: 0 auto 20px;
+}
+
+.dish-one,
+.dish-two {
+  border: 2px solid red;
+}
+
+.sandwich {
+  width: 600px;
+  grid-column: 1 / -1;
 }
